@@ -17,9 +17,8 @@ window.onmousemove = e => {
 
   const percentage = (mouseDelta / maxDelta) * -100,
     nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
-
-  Math.min(nextPercentage, 0);
-  Math.min(nextPercentage, -100);
+    Math.min(nextPercentage, 0);
+    Math.max(nextPercentage, -100);
 
   track.dataset.percentage = nextPercentage;
 

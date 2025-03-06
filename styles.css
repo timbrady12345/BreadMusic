@@ -21,7 +21,7 @@ body {
   width: 250px;
   height: 250px;
   overflow: hidden;
-  pointer-events: none;
+  /* pointer-events: none; */
   transform-origin: center;
   /* transform: scale(0); */
   z-index: 2;
