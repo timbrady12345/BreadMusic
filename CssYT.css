@@ -6,6 +6,12 @@ body {
   overflow: hidden;
 }
 
+h3, h3:hover, h3:visited, h3:link, h3:active{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+  text-decoration: none !important;
+}
+
 img {
   object-position: 100% 50%;
 }
@@ -24,4 +30,8 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(0%, -50%);
+}
+
+#h3Div{
+  color: lightslategray;
 }
