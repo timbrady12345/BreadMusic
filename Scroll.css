@@ -1,0 +1,86 @@
+/*Fonts--------------------------------------------------------------*/
+@font-face {
+  font-family: "Chillin";
+  src: url(./Fonts/CaviarDreams.ttf);
+}
+@font-face {
+  font-family: "ChillinItalic";
+  src: url(./Fonts/CaviarDreams_Italic.ttf);
+}
+
+/*Text---------------------------------------------------------------*/
+p {
+  color: cornsilk;
+  font-family: "Chillin";
+  font-weight: 400;
+}
+
+a:link,
+a:visited {
+  color: goldenrod;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*Background Colors---------------------------------------------------*/
+body {
+  background-color: RGB(9, 19, 29);
+  overflow: hidden;
+}
+
+/*Customs--------------------------------------------------------------*/
+.grid {
+  display: grid;
+}
+
+#top {
+  background-color: black;
+  border: 2px white;
+  border-width: 2px;
+  padding: 10px;
+  margin: auto;
+}
+
+/* div#mid {
+  background-color: aliceblue;
+  width: 66%;
+  margin: 5em auto; 
+  overflow: auto;
+  display: flex;
+  gap: 0.2vmin;
+  transform: translate(0%, 0%);
+}
+
+div#mid > .image {
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+} */
+
+#mid > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+  left: 0;
+}
+
+#mid {
+  display: flex;
+  gap: 4vmin;
+  margin: 50vmin auto;
+  transform: translate(0%, -50%);
+}
+
+#buttons {
+  margin: 5em 50%;
+  display: flex;
+}
