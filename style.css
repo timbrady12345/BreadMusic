@@ -1,133 +1,205 @@
-* {
-  margin-bottom: 10;
-  padding: 0;
-  box-sizing: border-box;
-  font-family:sans-serif;
+/*Fonts--------------------------------------------------------------*/
+@font-face {
+  font-family: "Chillin";
+  src: url(./Fonts/CaviarDreams.ttf);
+}
+@font-face {
+  font-family: "ChillinBold";
+  src: url(./Fonts/CaviarDreams_Bold.ttf);
 }
 
-div {
-  outline: 5px solid rgb(101, 90, 177);
+* {
+  color: white;
+}
+
+body {
+  background-color: rgb(83, 126, 168);
+  margin: 0;
+  overflow: hidden;
+  font-family: "ChillinBold";
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
 }
 
 p {
-  color: darkgoldenrod;
-}
-
-h4 {
-  color: blueviolet;
-  margin: 35px 0px 0px 7px;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: sienna;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.image {
+.mainPage {
   display: block;
-  width: 90%;
-  height: auto;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
 }
 
-.DogTab1 {
-  background-color: gainsboro;
-  color: black;
-  width: 30%;
-  padding: 5%;
-  border: 1px solid black;
-  margin: 0px 2px 10px;
-  padding: 1em;
-  text-align: center;
+.header {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  height: 20vh;
+  width: 100vw;
 }
+/* .title {
+  border: 2px dashed black;
+} */
 
-.SpiderTab1 {
-  background-color: papayawhip;
-  color: gray;
-  width: 30%;
-  padding: 5%;
-  border: 1px solid black;
-  margin: 0px 2px 10px;
-  text-align: center;
-}
-
-.DogTab2 {
-  background-color: lightskyblue;
+.tabs {
+  background-color: rgb(68, 121, 177);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: white;
-  width: 30%;
-  padding: 5%;
-  border: 1px solid black;
-  margin: 0px 2px 10px;
-  padding: 1em;
-  text-align: center;
+  height: 10vh;
+  width: 100vw;
 }
 
-.sour {
-  margin-bottom: 100%;
+.middleBoxes {
+  background-color: rgb(61, 61, 161);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 50vh;
+  width: 100vw;
 }
 
-.tab1 {
-  background-color: bisque;
-  color: gray;
-  width: 30%;
-  padding: 5%;
-  border: 1px solid black;
-  margin: 0px 2px 10px;
-  padding: 1em;
-  text-align: center;
+.contentList {
+  /* border: 2px dashed black; */
+  display: flex;
 }
 
-.circle {
-  margin: 3rem auto;
-  background-color: rgb(236, 206, 169);
-  width: 100px;
-  height: 100px;
-  border: 2px solid black;
-  border-radius: 50px;
-  outline: 2px solid black;
-  outline-offset: .5rem;
+.contentListItem {
+  padding: 2.5vmin;
 }
 
-.rowthing {
+.frontPageImage {
+  height: 50vmin;
+  transform: translate(0vmin, 1%);
+}
+
+.footer {
+  background-color: rgb(92, 110, 102);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 20vh;
+  width: 100vw;
+}
+
+.recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.spiders {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.recipesHeader {
+  background-color: goldenrod;
+  font-size: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  bottom: 45vh;
+  right: 37.5vw;
+  width: 25vw;
+  height: 10vh;
 }
 
-#name {
-  font-style: italic;
+.recipesImage {
+  float: center;
+  font-size: 2.5vh;
+  border: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50vh;
+  left: 45vw;
+  height: 40vh;
+  width: 50vw;
+}
+
+.recipesBlock {
+  float: center;
+  font-size: 2.5vh;
+  border: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+}
+
+.spidersHeader1 {
+  background-color: goldenrod;
+  float: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 5vmin;
+  width: 15vw;
+}
+
+.spidersHeader1Text {
+  transform: translate(0vmin, 10%);
+}
+
+.spidersHeader2 {
+  background-color: goldenrod;
+  float: right;
+  height: 5vmin;
+  width: 50vw;
+}
+
+.spidersHeader2Text {
+  transform: translate(0vmin, -70%);
+}
+
+.spidersBody {
+  background-color: rgb(61, 61, 161);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vmin;
+  width: 100vw;
+}
+
+.spidersBodyText {
+  font-size: 50vmin;
+}
+
+.page3 {
+  background-color: rgb(92, 110, 102);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 }
