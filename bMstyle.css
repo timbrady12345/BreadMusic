@@ -1,0 +1,358 @@
+/*Fonts--------------------------------------------------------------*/
+@font-face {
+  font-family: "Chillin";
+  src: url(./Fonts/CaviarDreams.ttf);
+}
+@font-face {
+  font-family: "ChillinBold";
+  src: url(./Fonts/CaviarDreams_Bold.ttf);
+}
+
+* {
+  color: white;
+}
+
+a {
+  color: rgb(125, 71, 155);
+}
+
+body {
+  background-color: rgb(169, 196, 223);
+  margin: 0;
+  overflow: hidden;
+  font-family: "helvetica";
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+}
+
+p {
+  align-items: center;
+  justify-content: center;
+}
+
+audio {
+  display: flex;
+  width: 20vw;
+}
+
+#my_audio {
+  display: none;
+}
+
+#hideAll {
+  display: none;
+  width: 100vh;
+  height: 100vw;
+}
+
+#mainPage {
+  display: none;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  height: 15vh;
+  width: 100vw;
+}
+
+.loadingScreen {
+  display: flex;
+  position: absolute;
+  top: 0vh;
+  left: 0vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.row1 {
+  background-color: rgb(68, 121, 177);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  height: 28.33vh;
+  width: 100vw;
+}
+
+.row2 {
+  background-color: rgb(61, 61, 161);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 28.33vh;
+  width: 100vw;
+}
+
+.row3 {
+  background-color: rgb(102, 37, 69);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 28.33vh;
+  width: 100vw;
+}
+
+.popUp {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
+#popUp {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
+#popUpCoffeeCake {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
+#popUpLemonCheesecake {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
+#popUpBack {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  z-index: 5;
+}
+
+#popUpBackCoffeeCake {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  z-index: 5;
+}
+
+#colon {
+  display: flex;
+  font-size: 2em;
+}
+
+#closeP {
+  display: flex;
+  font-size: 2em;
+  font-family: Chillin;
+}
+
+.popUpTitle {
+  z-index: 101;
+  font-size: 3em;
+  color: black;
+  z-index: 101;
+  position: absolute;
+  text-align: center;
+  width: 64vw;
+  top: 3vh;
+  left: 3vw;
+}
+
+.popUpText {
+  background-color: chartreuse;
+  z-index: 101;
+  position: absolute;
+  text-align: center;
+  height: 40vh;
+  width: 65vw;
+  bottom: 15vh;
+  left: 3vw;
+}
+
+.popUpLink {
+  display: flex;
+  position: absolute;
+  color: black;
+  font-size: 2em;
+  justify-content: center;
+  background-color: rgb(250, 243, 171);
+  bottom: 8vh;
+  left: 20vw;
+  height: 5vh;
+  width: 30vw;
+}
+
+.contentList {
+  /* border: 2px dashed black; */
+  display: flex;
+}
+
+.contentListItem {
+  border: solid;
+  border-color: black;
+  height: 28.33vh;
+  width: 25vw;
+}
+
+#contentListItem {
+  height: 28.33vh;
+  width: 25vw;
+}
+
+.frontPageImage {
+  height: 28.33vh;
+  width: 25vw;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+#frontPageImage {
+  height: 28.33vh;
+  width: 25vw;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+#recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#recipesContent {
+  display: flex;
+  flex: 1;
+}
+
+.recipesHeader {
+  background-color: goldenrod;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 45vh;
+  right: 37.5vw;
+  width: 25vw;
+  height: 10vh;
+  z-index: 5;
+}
+
+.recipesImage {
+  float: center;
+  font-size: 2.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  top: 0vh;
+  left: 0vw;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.recipesBlock {
+  opacity: 0.8;
+  display: flex;
+  float: center;
+  padding: 10px;
+  font-size: 2.5vh;
+  background-color: rgb(100, 100, 100);
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0vh;
+  right: 0vw;
+  height: 100vh;
+  width: 50vw;
+  z-index: 3;
+}
+
+.recipesBlockText {
+  opacity: 0.8;
+  display: flex;
+  float: center;
+  padding: 10px;
+  font-size: 2.5vh;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+  height: 70vh;
+  width: 40vw;
+  z-index: 3;
+}
+
+.recipesBlockText p {
+  color: black;
+  background-color: rgb(193, 169, 109);
+}
+
+.recipesBlockTextCoffeeCake {
+  opacity: 0.8;
+  display: flex;
+  float: center;
+  padding: 10px;
+  font-size: 2.5vh;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+  height: 70vh;
+  width: 40vw;
+  z-index: 3;
+}
+
+.recipesBlockTextCoffeeCake p {
+  color: black;
+  background-color: rgb(116, 69, 69);
+}

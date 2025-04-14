@@ -1,0 +1,205 @@
+/*Fonts--------------------------------------------------------------*/
+@font-face {
+  font-family: "Chillin";
+  src: url(./Fonts/CaviarDreams.ttf);
+}
+@font-face {
+  font-family: "ChillinBold";
+  src: url(./Fonts/CaviarDreams_Bold.ttf);
+}
+
+* {
+  color: white;
+}
+
+body {
+  background-color: rgb(83, 126, 168);
+  margin: 0;
+  overflow: hidden;
+  font-family: "ChillinBold";
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw;
+}
+
+p {
+  align-items: center;
+  justify-content: center;
+}
+
+.mainPage {
+  display: block;
+  flex: 1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  height: 20vh;
+  width: 100vw;
+}
+/* .title {
+  border: 2px dashed black;
+} */
+
+.tabs {
+  background-color: rgb(68, 121, 177);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  height: 10vh;
+  width: 100vw;
+}
+
+.middleBoxes {
+  background-color: rgb(61, 61, 161);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 50vh;
+  width: 100vw;
+}
+
+.contentList {
+  /* border: 2px dashed black; */
+  display: flex;
+}
+
+.contentListItem {
+  padding: 2.5vmin;
+}
+
+.frontPageImage {
+  height: 50vmin;
+  transform: translate(0vmin, 1%);
+}
+
+.footer {
+  background-color: rgb(92, 110, 102);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  height: 20vh;
+  width: 100vw;
+}
+
+.recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.spiders {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.recipesHeader {
+  background-color: goldenrod;
+  font-size: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 45vh;
+  right: 37.5vw;
+  width: 25vw;
+  height: 10vh;
+}
+
+.recipesImage {
+  float: center;
+  font-size: 2.5vh;
+  border: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50vh;
+  left: 45vw;
+  height: 40vh;
+  width: 50vw;
+}
+
+.recipesBlock {
+  float: center;
+  font-size: 2.5vh;
+  border: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 10vh;
+  width: 10vw;
+}
+
+.spidersHeader1 {
+  background-color: goldenrod;
+  float: none;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 5vmin;
+  width: 15vw;
+}
+
+.spidersHeader1Text {
+  transform: translate(0vmin, 10%);
+}
+
+.spidersHeader2 {
+  background-color: goldenrod;
+  float: right;
+  height: 5vmin;
+  width: 50vw;
+}
+
+.spidersHeader2Text {
+  transform: translate(0vmin, -70%);
+}
+
+.spidersBody {
+  background-color: rgb(61, 61, 161);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vmin;
+  width: 100vw;
+}
+
+.spidersBodyText {
+  font-size: 50vmin;
+}
+
+.page3 {
+  background-color: rgb(92, 110, 102);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
