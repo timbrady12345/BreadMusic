@@ -13,7 +13,16 @@
 }
 
 a {
+  color: white;
+}
+
+#begin {
+  color: black;
+}
+
+a:hover {
   color: rgb(125, 71, 155);
+  transition: 200ms ease-in-out;
 }
 
 body {
@@ -32,8 +41,12 @@ p {
 }
 
 audio {
+  position: absolute;
   display: flex;
-  width: 20vw;
+  width: 100vw;
+  left: 0%;
+  bottom: 0%;
+  z-index: 5;
 }
 
 #my_audio {
@@ -93,6 +106,29 @@ audio {
   opacity: 0;
   transition: 200ms ease-in-out;
 }
+
+/* Cheese Cake Front Page Stuff */
+.cheeseCakeText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#lemonCheeseCake:hover {
+  filter: grayscale(0%);
+}
+
+#lemonCheeseCake:hover .cheeseCakeText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
 /* Main page loading settings */
 #mainPage {
   display: none;
@@ -196,7 +232,7 @@ audio {
   left: 15vw;
 }
 
-#popUpLemonCheesecake {
+#popUpLemonCheeseCake {
   z-index: 100;
   display: none;
   position: absolute;
@@ -216,6 +252,13 @@ audio {
 }
 
 #popUpBackCoffeeCake {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  z-index: 5;
+}
+
+#popUpBackLemonCheeseCake {
   display: flex;
   background-color: rgb(100, 100, 100);
   position: absolute;
@@ -413,4 +456,26 @@ audio {
 .recipesBlockTextCoffeeCake p {
   color: black;
   background-color: rgb(116, 69, 69);
+}
+
+.recipesBlockTextCheeseCake {
+  opacity: 0.8;
+  display: flex;
+  float: center;
+  padding: 10px;
+  font-size: 2.5vh;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5vh;
+  right: 10vw;
+  height: 70vh;
+  width: 40vw;
+  z-index: 3;
+}
+
+.recipesBlockTextCheeseCake p {
+  color: black;
+  background-color: rgb(212, 224, 151);
 }
