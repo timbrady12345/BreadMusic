@@ -7,7 +7,7 @@
   font-family: "ChillinBold";
   src: url(./Fonts/CaviarDreams_Bold.ttf);
 }
-
+/* General design stuff */
 * {
   color: white;
 }
@@ -45,17 +45,20 @@ audio {
   width: 100vh;
   height: 100vw;
 }
-
+/* Bread front page image */
 #theBread {
-  filter: grayscale(100%);
 }
 
 .breadText {
+  border: solid;
   background-color: black;
-  padding: 10px;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
   position: absolute;
-  left: 6vw;
-  bottom: 13vh;
+  left: 30%;
+  bottom: 33%;
 }
 
 #theBread:hover {
@@ -63,16 +66,41 @@ audio {
 }
 
 #theBread:hover .breadText {
-  display: none;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+/* Coffee Cake Front Page Image */
+#coffeeCake {
 }
 
+.coffeeCakeText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#coffeeCake:hover {
+  filter: grayscale(0%);
+}
+
+#coffeeCake:hover .coffeeCakeText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+/* Main page loading settings */
 #mainPage {
   display: none;
   flex: 1;
   height: 100vh;
   width: 100vw;
 }
-
+/* Bread Music Header */
 .header {
   background-color: goldenrod;
   flex: 1;
@@ -84,7 +112,7 @@ audio {
   height: 15vh;
   width: 100vw;
 }
-
+/* Loading Screen */
 .loadingScreen {
   display: flex;
   position: absolute;
@@ -94,7 +122,7 @@ audio {
   width: 100vw;
   z-index: -1;
 }
-
+/* Rows */
 .row1 {
   background-color: rgb(68, 121, 177);
   flex: 1;
@@ -131,7 +159,7 @@ audio {
   height: 28.33vh;
   width: 100vw;
 }
-
+/* pop ups */
 .popUp {
   z-index: 100;
   display: none;
@@ -194,7 +222,7 @@ audio {
   z-index: 5;
 }
 
-#colon {
+#arrow {
   display: flex;
   font-size: 2em;
 }
@@ -240,29 +268,34 @@ audio {
   height: 5vh;
   width: 30vw;
 }
-
+/* content lists */
 .contentList {
-  /* border: 2px dashed black; */
   display: flex;
 }
 
 .contentListItem {
   filter: grayscale(100%);
+  transition: 200ms ease-in-out;
   border: solid;
   border-color: black;
   height: 28.33vh;
   width: 25vw;
+  object-fit: cover;
+  object-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contentListItem:hover {
   filter: grayscale(0%);
+  transition: 200ms ease-in-out;
 }
 
 #contentListItem {
   height: 28.33vh;
   width: 25vw;
 }
-
+/* images on front page */
 .frontPageImage {
   height: 28.33vh;
   width: 25vw;
@@ -276,7 +309,7 @@ audio {
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
-
+/* recipe page stuff */
 #recipes {
   display: flex;
   align-items: center;
@@ -359,7 +392,7 @@ audio {
   color: black;
   background-color: rgb(193, 169, 109);
 }
-
+/* for Coffee Cake recipe page */
 .recipesBlockTextCoffeeCake {
   opacity: 0.8;
   display: flex;
