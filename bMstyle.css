@@ -350,7 +350,7 @@ audio {
 .contentListItem {
   filter: grayscale(100%);
   transition: 200ms ease-in-out;
-  border: solid;
+  /* border: solid; */
   height: 50vh;
   width: 25vw;
   object-fit: cover;
@@ -658,6 +658,7 @@ audio {
     border: solid;
     background-color: black;
     opacity: 1;
+    display: inline-block;
     transition: 200ms ease-in-out;
     font-size: 3vh;
     padding: 5px;
@@ -682,6 +683,7 @@ audio {
     border: solid;
     background-color: black;
     opacity: 1;
+    display: inline-block;
     transition: 200ms ease-in-out;
     font-size: 3vh;
     padding: 5px;
@@ -695,6 +697,7 @@ audio {
     border: solid;
     background-color: black;
     opacity: 1;
+    display: inline-block;
     transition: 200ms ease-in-out;
     font-size: 3vh;
     padding: 5px;
@@ -713,7 +716,7 @@ audio {
     height: inherit;
     width: inherit;
     aspect-ratio: 1 / 1;
-    object-fit: cover;
+    object-fit: fill;
   }
 
   /* recipe page stuff */
