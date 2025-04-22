@@ -716,7 +716,7 @@ audio {
     height: inherit;
     width: inherit;
     aspect-ratio: 1 / 1;
-    object-fit: fill;
+    object-fit: cover;
   }
 
   /* recipe page stuff */
