@@ -14,6 +14,7 @@
 
 a {
   color: white;
+  transition: 500ms ease-in-out;
 }
 
 #begin {
@@ -22,13 +23,12 @@ a {
 
 a:hover {
   color: rgb(125, 71, 155);
-  transition: 200ms ease-in-out;
+  transition: 500ms ease-in-out;
 }
 
 body {
   background-color: rgb(169, 196, 223);
   margin: 0;
-  overflow: hidden;
   font-family: "helvetica";
   font-weight: 400;
   height: 100vh;
@@ -41,7 +41,7 @@ p {
 }
 
 audio {
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 100vw;
   left: 0%;
@@ -129,8 +129,27 @@ audio {
   transition: 200ms ease-in-out;
 }
 
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 0vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #c00b0b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #890daf;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e0e81;
+}
+
 /* Main page loading settings */
 #mainPage {
+  overflow-x: hidden;
+  overflow-y: auto;
   display: none;
   flex: 1;
   height: 100vh;
@@ -143,9 +162,21 @@ audio {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
+  font-size: 15vh;
   font-weight: bold;
   height: 15vh;
+  width: 100vw;
+}
+
+.footer {
+  background-color: goldenrod;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  font-weight: bold;
+  height: 7vh;
   width: 100vw;
 }
 /* Loading Screen */
@@ -168,7 +199,7 @@ audio {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-  height: 28.33vh;
+  height: 50vh;
   width: 100vw;
 }
 
@@ -180,7 +211,7 @@ audio {
   font-size: 2rem;
   font-weight: bold;
   color: white;
-  height: 28.33vh;
+  height: 50vh;
   width: 100vw;
 }
 
@@ -192,7 +223,7 @@ audio {
   font-size: 2rem;
   font-weight: bold;
   color: white;
-  height: 28.33vh;
+  height: 50vh;
   width: 100vw;
 }
 /* pop ups */
@@ -320,8 +351,7 @@ audio {
   filter: grayscale(100%);
   transition: 200ms ease-in-out;
   border: solid;
-  border-color: black;
-  height: 28.33vh;
+  height: 50vh;
   width: 25vw;
   object-fit: cover;
   object-position: center;
@@ -335,25 +365,21 @@ audio {
 }
 
 #contentListItem {
-  height: 28.33vh;
+  height: 50vh;
   width: 25vw;
 }
 /* images on front page */
 .frontPageImage {
-  height: 28.33vh;
+  height: 50vh;
   width: 25vw;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-#frontPageImage {
-  height: 28.33vh;
-  width: 25vw;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
 /* recipe page stuff */
 #recipes {
+  overflow-x: hidden;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,8 +417,8 @@ audio {
   object-fit: cover;
   top: 0vh;
   left: 0vw;
-  height: 100vh;
-  width: 100vw;
+  height: 102.5vh;
+  width: 101vw;
   z-index: 0;
 }
 
@@ -478,4 +504,290 @@ audio {
 .recipesBlockTextCheeseCake p {
   color: black;
   background-color: rgb(212, 224, 151);
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+@media (max-width: 720px) {
+  /* General design stuff */
+  * {
+    color: white;
+  }
+
+  a {
+    color: white;
+    transition: 500ms ease-in-out;
+  }
+
+  #begin {
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(125, 71, 155);
+    transition: 500ms ease-in-out;
+  }
+
+  body {
+    background-color: rgb(169, 196, 223);
+    margin: 0;
+    font-family: "helvetica";
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* Main page loading settings */
+  #mainPage {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+    flex: 1;
+    height: 100vh;
+    width: 100vw;
+  }
+  /* Bread Music Header */
+  .header {
+    background-color: goldenrod;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9vh;
+    font-weight: bold;
+    height: 15vh;
+    width: 100vw;
+  }
+
+  .footer {
+    background-color: goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    font-weight: bold;
+    height: 7vh;
+    width: 100vw;
+  }
+  /* Rows */
+  .row1 {
+    background-color: rgb(68, 121, 177);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    height: 202vh;
+    width: 100vw;
+  }
+
+  .row2 {
+    background-color: rgb(61, 61, 161);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    height: 202vh;
+    width: 100vw;
+  }
+
+  .row3 {
+    background-color: rgb(102, 37, 69);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    height: 202vh;
+    width: 100vw;
+  }
+
+  /* content lists */
+  .contentList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contentListItem {
+    filter: grayscale(100%);
+    transition: 200ms ease-in-out;
+    /* border: solid; */
+    /* border-color: black; */
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+
+  .contentListItem:hover {
+    filter: grayscale(0%);
+    transition: 200ms ease-in-out;
+  }
+
+  #contentListItem {
+    height: 50vh;
+    width: 100vw;
+  }
+  /* images on front page */
+  .frontPageImage {
+    height: inherit;
+    width: inherit;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  /* recipe page stuff */
+  #recipes {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  #recipesContent {
+    display: flex;
+    flex: 1;
+  }
+
+  .recipesHeader {
+    background-color: goldenrod;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 45vh;
+    right: 37.5vw;
+    width: 25vw;
+    height: 10vh;
+    z-index: 5;
+  }
+
+  .recipesImage {
+    float: center;
+    font-size: 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    top: 0vh;
+    left: 0vw;
+    height: 102.5vh;
+    width: 101vw;
+    z-index: 0;
+  }
+
+  .recipesBlock {
+    opacity: 0.8;
+    display: flex;
+    float: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    background-color: rgb(100, 100, 100);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    height: 100vh;
+    width: 50vw;
+    z-index: 3;
+  }
+
+  .recipesBlockText {
+    opacity: 0.8;
+    display: flex;
+    float: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    height: 70vh;
+    width: 40vw;
+    z-index: 3;
+  }
+
+  .recipesBlockText p {
+    color: black;
+    background-color: rgb(193, 169, 109);
+  }
+  /* for Coffee Cake recipe page */
+  .recipesBlockTextCoffeeCake {
+    opacity: 0.8;
+    display: flex;
+    float: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    height: 70vh;
+    width: 40vw;
+    z-index: 3;
+  }
+
+  .recipesBlockTextCoffeeCake p {
+    color: black;
+    background-color: rgb(116, 69, 69);
+  }
+
+  .recipesBlockTextCheeseCake {
+    opacity: 0.8;
+    display: flex;
+    float: center;
+    padding: 10px;
+    font-size: 2.5vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    height: 70vh;
+    width: 40vw;
+    z-index: 3;
+  }
+
+  .recipesBlockTextCheeseCake p {
+    color: black;
+    background-color: rgb(212, 224, 151);
+  }
 }
