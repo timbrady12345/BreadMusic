@@ -572,7 +572,7 @@ audio {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 9vh;
+    font-size: 7vh;
     font-weight: bold;
     height: 15vh;
     width: 100vw;
@@ -653,6 +653,61 @@ audio {
     height: 50vh;
     width: 100vw;
   }
+
+  .breadText {
+    border: solid;
+    background-color: black;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    font-size: 3vh;
+    padding: 5px;
+    position: absolute;
+    left: 30%;
+    bottom: 33%;
+  }
+
+  #theBread:hover {
+    filter: grayscale(0%);
+  }
+
+  #theBread:hover .breadText {
+    opacity: 0;
+    transition: 200ms ease-in-out;
+  }
+  /* Coffee Cake Front Page Image */
+  #coffeeCake {
+  }
+
+  .coffeeCakeText {
+    border: solid;
+    background-color: black;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    font-size: 3vh;
+    padding: 5px;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+  }
+
+  /* Cheese Cake Front Page Stuff */
+  .cheeseCakeText {
+    border: solid;
+    background-color: black;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    font-size: 3vh;
+    padding: 5px;
+    position: absolute;
+    left: 10%;
+    bottom: 30%;
+  }
+
+  #lemonCheeseCake:hover .cheeseCakeText {
+    opacity: 0;
+    transition: 200ms ease-in-out;
+  }
+
   /* images on front page */
   .frontPageImage {
     height: inherit;
