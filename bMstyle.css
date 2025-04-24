@@ -129,6 +129,116 @@ audio {
   transition: 200ms ease-in-out;
 }
 
+/* Concrete Cake Front Page Stuff */
+.concreteCakeText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#concreteCake:hover {
+  filter: grayscale(0%);
+}
+
+#concreteCake:hover .concreteCakeText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+/* Ceviche Front Page Stuff */
+.cevicheText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#ceviche:hover {
+  filter: grayscale(0%);
+}
+
+#ceviche:hover .cevicheText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+/* Ceviche Front Page Stuff */
+.cevicheText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#ceviche:hover {
+  filter: grayscale(0%);
+}
+
+#ceviche:hover .cevicheText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+/* Ceviche Front Page Stuff */
+.frenchToastText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#frenchToast:hover {
+  filter: grayscale(0%);
+}
+
+#frenchToast:hover .frenchToastText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
+/* Tomatoes Front Page Stuff */
+.tomatoesText {
+  border: solid;
+  background-color: black;
+  opacity: 1;
+  transition: 200ms ease-in-out;
+  font-size: 3vh;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  bottom: 30%;
+}
+
+#tomatoes:hover {
+  filter: grayscale(0%);
+}
+
+#tomatoes:hover .tomatoesText {
+  opacity: 0;
+  transition: 200ms ease-in-out;
+}
+
 /* ScrollBar */
 ::-webkit-scrollbar {
   width: 0vw;
@@ -350,7 +460,7 @@ audio {
 .contentListItem {
   filter: grayscale(100%);
   transition: 200ms ease-in-out;
-  /* border: solid; */
+  border: none;
   height: 50vh;
   width: 25vw;
   object-fit: cover;
@@ -635,10 +745,10 @@ audio {
   }
 
   .contentListItem {
+    border: none;
     filter: grayscale(100%);
     transition: 200ms ease-in-out;
-    /* border: solid; */
-    /* border-color: black; */
+    top: 0px;
     height: 50vh;
     width: 100vw;
     object-fit: cover;
@@ -655,10 +765,9 @@ audio {
   }
 
   .breadText {
-    border: solid;
+    border: none;
     background-color: black;
     opacity: 1;
-    display: inline-block;
     transition: 200ms ease-in-out;
     font-size: 3vh;
     padding: 5px;
@@ -672,41 +781,6 @@ audio {
   }
 
   #theBread:hover .breadText {
-    opacity: 0;
-    transition: 200ms ease-in-out;
-  }
-  /* Coffee Cake Front Page Image */
-  #coffeeCake {
-  }
-
-  .coffeeCakeText {
-    border: solid;
-    background-color: black;
-    opacity: 1;
-    display: inline-block;
-    transition: 200ms ease-in-out;
-    font-size: 3vh;
-    padding: 5px;
-    position: absolute;
-    left: 10%;
-    bottom: 30%;
-  }
-
-  /* Cheese Cake Front Page Stuff */
-  .cheeseCakeText {
-    border: solid;
-    background-color: black;
-    opacity: 1;
-    display: inline-block;
-    transition: 200ms ease-in-out;
-    font-size: 3vh;
-    padding: 5px;
-    position: absolute;
-    left: 10%;
-    bottom: 30%;
-  }
-
-  #lemonCheeseCake:hover .cheeseCakeText {
     opacity: 0;
     transition: 200ms ease-in-out;
   }
