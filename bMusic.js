@@ -20,6 +20,12 @@ const popUpBackLemonCheeseCake = document.getElementById(
   "popUpBackLemonCheeseCake"
 );
 const lemonCheeseCake = document.getElementById("lemonCheeseCake");
+const popUpTomato = document.getElementById("popUpTomato");
+const popUpBackTomato = document.getElementById("popUpBackTomato");
+const tomato = document.getElementById("tomato");
+const popUpFrenchToast = document.getElementById("popUpFrenchToast");
+const popUpBackFrenchToast = document.getElementById("popUpBackFrenchToast");
+const frenchToast = document.getElementById("frenchToast");
 
 theBread.onmousedown = () => {
   popUp.style.display = "flex";
@@ -43,6 +49,22 @@ lemonCheeseCake.onmousedown = () => {
 
 popUpBackLemonCheeseCake.onmousedown = () => {
   popUpLemonCheeseCake.style.display = "none";
+};
+
+tomato.onmousedown = () => {
+  popUpTomato.style.display = "flex";
+};
+
+popUpBackTomato.onmousedown = () => {
+  popUpTomato.style.display = "none";
+};
+
+frenchToast.onmousedown = () => {
+  popUpFrenchToast.style.display = "flex";
+};
+
+popUpBackFrenchToast.onmousedown = () => {
+  popUpFrenchToast.style.display = "none";
 };
 
 window.onload = function () {

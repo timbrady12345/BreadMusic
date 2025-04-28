@@ -195,7 +195,7 @@ audio {
   transition: 200ms ease-in-out;
 }
 
-/* Ceviche Front Page Stuff */
+/* French Toast Front Page Stuff */
 .frenchToastText {
   border: solid;
   background-color: black;
@@ -218,7 +218,7 @@ audio {
 }
 
 /* Tomatoes Front Page Stuff */
-.tomatoesText {
+.tomatoText {
   border: solid;
   background-color: black;
   opacity: 1;
@@ -230,11 +230,11 @@ audio {
   bottom: 30%;
 }
 
-#tomatoes:hover {
+#tomato:hover {
   filter: grayscale(0%);
 }
 
-#tomatoes:hover .tomatoesText {
+#tomato:hover .tomatoText {
   opacity: 0;
   transition: 200ms ease-in-out;
 }
@@ -385,6 +385,30 @@ audio {
   left: 15vw;
 }
 
+#popUpTomato {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
+#popUpFrenchToast {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  width: 70vw;
+  bottom: 10vh;
+  left: 15vw;
+}
+
 #popUpBack {
   display: flex;
   background-color: rgb(100, 100, 100);
@@ -400,6 +424,20 @@ audio {
 }
 
 #popUpBackLemonCheeseCake {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  z-index: 5;
+}
+
+#popUpBackTomato {
+  display: flex;
+  background-color: rgb(100, 100, 100);
+  position: absolute;
+  z-index: 5;
+}
+
+#popUpBackFrenchToast {
   display: flex;
   background-color: rgb(100, 100, 100);
   position: absolute;
@@ -438,6 +476,22 @@ audio {
   width: 65vw;
   bottom: 15vh;
   left: 3vw;
+}
+
+.popUpTextCoffeeCake {
+  background-color: rgb(135, 43, 148);
+  z-index: 101;
+  position: absolute;
+  text-align: center;
+  object-fit: contain;
+  height: 40vh;
+  width: 65vw;
+  bottom: 15vh;
+  left: 3vw;
+}
+
+.popUpTextCoffeeCake p {
+  color: aliceblue !important;
 }
 
 .popUpLink {
@@ -508,9 +562,9 @@ audio {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  bottom: 45vh;
-  right: 37.5vw;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
   width: 25vw;
   height: 10vh;
   z-index: 5;
@@ -555,15 +609,15 @@ audio {
   display: flex;
   float: center;
   padding: 10px;
-  font-size: 2.5vh;
+  font-size: 1.75vh;
   color: black;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 5vh;
-  right: 10vw;
-  height: 70vh;
-  width: 40vw;
+  top: 3vh;
+  right: -0.5vw;
+  height: 85vh;
+  width: 50vw;
   z-index: 3;
 }
 
@@ -577,15 +631,15 @@ audio {
   display: flex;
   float: center;
   padding: 10px;
-  font-size: 2.5vh;
+  font-size: 1.75vh;
   color: black;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 5vh;
-  right: 10vw;
-  height: 70vh;
-  width: 40vw;
+  top: 3vh;
+  right: -0.5vw;
+  height: 85vh;
+  width: 50vw;
   z-index: 3;
 }
 
