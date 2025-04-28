@@ -863,20 +863,6 @@ audio {
     flex: 1;
   }
 
-  .recipesHeader {
-    background-color: goldenrod;
-    font-size: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 45vh;
-    right: 37.5vw;
-    width: 25vw;
-    height: 10vh;
-    z-index: 5;
-  }
-
   .recipesImage {
     float: center;
     font-size: 2.5vh;
