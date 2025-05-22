@@ -134,6 +134,7 @@ audio {
   border: solid;
   background-color: black;
   opacity: 1;
+  z-index: 15;
   transition: 200ms ease-in-out;
   font-size: 3vh;
   padding: 5px;
@@ -528,10 +529,11 @@ audio {
   transition: 200ms ease-in-out;
 }
 
-#contentListItem {
+/* #contentListItem {
   height: 50vh;
   width: 25vw;
-}
+} */
+
 /* images on front page */
 .frontPageImage {
   height: 50vh;
